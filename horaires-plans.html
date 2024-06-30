@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horaires & Plans - FSIS Formation</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
     <header id="header">
@@ -45,52 +46,59 @@
         <section>
             <h2>Plan d'Accès</h2>
             <div class="map-container">
-                <div id="map"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10479.977745670796!2d2.3350642173828016!3d48.95359180000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6693c473f951f%3A0x985b756d56013e6!2s11%20Rue%20Marcel%20Sembat%2C%2093430%20Villetaneuse!5e0!3m2!1sfr!2sfr!4v1719705069565!5m2!1sfr!2sfr" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </div>
+
     <footer class="footer">
         <div class="footer-content container">
-            <div class="footer-section">
-                <h3>Informations</h3>
-                <ul>
-                    <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                    <li><a href="horaires-plans.html">Horaires & Plans</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="row">
+                <div class="footer-section col-md-3">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                        <li><a href="horaires-plans.html">Horaires & Plans</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section col-md-3">
+                    <h3>Formations</h3>
+                    <ul>
+                        <li><a href="formation-ssiap1.html">SSIAP 1</a></li>
+                        <li><a href="formation-ssiap2.html">SSIAP 2</a></li>
+                        <li><a href="formation-ssiap3.html">SSIAP 3</a></li>
+                        <li><a href="palpation.html">Palpation</a></li>
+                        <li><a href="mac-aps.html">MAC - APS</a></li>
+                        <li><a href="cqp-aps.html">CQP-APS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section col-md-3">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="plan.html">Plan du site</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section col-md-3">
+                    <h3>Nous Contacter</h3>
+                    <ul>
+                        <li><a href="tel:0155991386"><img src="assets/tel.jpg" alt="Phone Icon"> 01 55 99 13 86</a></li>
+                        <li><a href="mailto:contact@forfsis.fr"><img src="assets/mail.jpg" alt="Email Icon"> contact@forfsis.fr</a></li>
+                        <li><a href="https://g.co/kgs/zqDmAL7">Adresse: 11 Rue Marcel Sembat, 93430 Villetaneuse</a></li>
+                        <li><a href="contact.html">Voir la page contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Formations</h3>
-                <ul>
-                    <li><a href="formation-ssiap1.html">SSIAP 1</a></li>
-                    <li><a href="formation-ssiap2.html">SSIAP 2</a></li>
-                    <li><a href="formation-ssiap3.html">SSIAP 3</a></li>
-                    <li><a href="palpation.html">Palpation</a></li>
-                    <li><a href="mac-aps.html">MAC - APS</a></li>
-                    <li><a href="cqp-aps.html">CQP-APS</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Liens Utiles</h3>
-                <ul>
-                    <li><a href="plan.html">Plan du site</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Nous Contacter</h3>
-                <ul>
-                    <li><a href="tel:0148585438"><img src="assets/tel.jpg" alt="Phone Icon"> 01 48 58 54 38</a></li>
-                    <li><a href="mailto:contact@forfsis.fr"><img src="assets/mail.jpg" alt="Email Icon"> contact@forfsis.fr</a></li>
-                    <li><a href="https://g.co/kgs/zqDmAL7">Adresse: 11 Rue Marcel Sembat, 93430 Villetaneuse</a></li>
-                    <li><a href="contact.html">Voir la page contact</a></li>
-                </ul>
+            <div class="footer-bottom row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <img src="assets/logo_fsis_bas.jpg" alt="FSIS Formation Logo" class="img-fluid">
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 FSIS Formation. Tous droits réservés.</p>
         </div>
     </footer>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
