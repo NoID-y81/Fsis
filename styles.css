@@ -101,6 +101,14 @@ nav {
     background-color: #f8f8f8;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
     white-space: nowrap;
+    width: 100%; /* Assurez-vous que les liens prennent toute la largeur de leur conteneur */
+    text-align: center; /* Centrez le texte */
+    padding: 15px 0; /* Ajustez les valeurs de padding si nécessaire */
+}
+
+.menu > li.active > a {
+    background-color: #007BFF;
+    color: #fff;
 }
 
 .menu > li > a:hover {
@@ -530,4 +538,18 @@ main.container {
     height: 100%;
     object-fit: contain;
     max-height: 600px; /* Assurez-vous que cette valeur correspond à celle de .carousel-item */
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajustez cette valeur si nécessaire */
+    opacity: 0.8; /* Rendre les flèches un peu transparentes */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
+    border-radius: 50%; /* Rendre les flèches circulaires */
+    padding: 10px; /* Ajouter du padding pour agrandir les icônes */
 }
