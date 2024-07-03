@@ -101,9 +101,9 @@ nav {
     background-color: #f8f8f8;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
     white-space: nowrap;
-    width: 100%; /* Assurez-vous que les liens prennent toute la largeur de leur conteneur */
-    text-align: center; /* Centrez le texte */
-    padding: 15px 0; /* Ajustez les valeurs de padding si nécessaire */
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .menu > li.active > a {
@@ -207,7 +207,7 @@ nav {
 
 .section img {
     width: 100%;
-    height: 250px; /* Taille fixe pour uniformité */
+    height: 250px;
     object-fit: cover;
     display: block;
     margin-top: 40px;
@@ -228,7 +228,7 @@ nav {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 1;
-    margin: 10px 0; /* Ajouter plus d'espace entre les liens */
+    margin: 10px 0;
 }
 
 .section:hover .section-text {
@@ -347,8 +347,8 @@ main.container {
     flex: 1;
     min-width: 200px;
     margin-bottom: 20px;
-    padding-right: 10px; /* Ajoute un espace de 10px à droite pour l'alignement */
-    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 .link-category h3 {
@@ -357,7 +357,7 @@ main.container {
     color: #333;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
-    height: 40px; /* Hauteur uniforme pour les titres */
+    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -365,7 +365,7 @@ main.container {
 .link-category ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Assure que les marges sont également à zéro */
+    margin: 0;
 }
 
 .link-category ul li {
@@ -500,18 +500,18 @@ main.container {
 
 .statistics .row {
     display: flex;
-    justify-content: center; /* Centre les éléments horizontalement */
-    align-items: center; /* Centre les éléments verticalement */
-    text-align: center; /* Centre le texte */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .statistics .stat-item {
-    margin: 10px; /* Ajoute un peu d'espace entre les éléments */
+    margin: 10px;
 }
 
 /* Section pour uniformiser la hauteur */
 .uniform-height {
-    min-height: 300px; /* Ajustez cette valeur selon vos besoins */
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -523,10 +523,9 @@ main.container {
     padding: 0 20px;
 }
 
-
 /* Styles pour le carrousel */
 .carousel-item {
-    max-height: 600px; /* Ajustez cette valeur pour changer la taille de l'image */
+    max-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,19 +536,134 @@ main.container {
     width: auto;
     height: 100%;
     object-fit: contain;
-    max-height: 600px; /* Assurez-vous que cette valeur correspond à celle de .carousel-item */
+    max-height: 600px;
 }
-
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Ajustez cette valeur si nécessaire */
-    opacity: 0.8; /* Rendre les flèches un peu transparentes */
+    width: 5%;
+    opacity: 0.8;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fond noir semi-transparent */
-    border-radius: 50%; /* Rendre les flèches circulaires */
-    padding: 10px; /* Ajouter du padding pour agrandir les icônes */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo-nav,
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu > li {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .menu > li > a {
+        padding: 10px;
+    }
+
+    .section {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        flex-basis: 100%;
+    }
+
+    .sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .top-bar .contact-info a {
+        margin: 10px 0;
+    }
+
+    .logo-nav {
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu > li {
+        width: 100%;
+    }
+
+    .menu > li > a {
+        padding: 10px 0;
+    }
+
+    .image_de_fond {
+        height: 300px;
+    }
+
+    .section {
+        margin: 20px 0;
+    }
+}
+
+/* Carte pour les grands écrans */
+.map-container iframe {
+    width: 1200px;
+    height: 600px;
+}
+
+/* Styles responsives */
+@media (max-width: 1200px) {
+    .map-container iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .map-container iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+    }
 }

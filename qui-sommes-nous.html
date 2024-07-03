@@ -54,10 +54,48 @@
         </section>
 
         <section class="classroom">
-            <h2>Nos Salles de Classe</h2>
-            <p>Voici une de nos salles de classe où nos formations se déroulent :</p>
-            <a href="assets/salle.png" target="_blank"><img src="assets/salle.png" alt="Salle de classe FSIS Formation" style="width:100%; max-width:600px; display:block; margin:auto;"></a>
+            <h2>Notre établissement</h2>
+            <p>Voici des photos de notre établissement :</p>
+            <div id="classroomCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                    <li data-target="#classroomCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#classroomCarousel" data-slide-to="1"></li>
+                    <li data-target="#classroomCarousel" data-slide-to="2"></li>
+                    <li data-target="#classroomCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="assets/salle.png" target="_blank">
+                            <img src="assets/salle.png" class="d-block w-100" alt="Salle de classe FSIS Formation">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/salle2.png" target="_blank">
+                            <img src="assets/salle2.png" class="d-block w-100" alt="Deuxième salle de classe FSIS Formation">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/bureau.png" target="_blank">
+                            <img src="assets/bureau.png" class="d-block w-100" alt="Bureau FSIS Formation">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/couloir_fsis.png" target="_blank">
+                            <img src="assets/couloir_fsis.png" class="d-block w-100" alt="Couloir FSIS Formation">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#classroomCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#classroomCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+            </div>
         </section>
+        
 
         <section class="vision">
             <h2>Notre Vision</h2>
